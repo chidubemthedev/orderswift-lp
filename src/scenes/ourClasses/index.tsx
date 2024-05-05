@@ -1,47 +1,40 @@
 import React from "react";
 import { ClassType, SelectedPage } from "@/shared/types";
-import image1 from "@/assets/image1.png";
-import image2 from "@/assets/image2.png";
-import image3 from "@/assets/image3.png";
-import image4 from "@/assets/image4.png";
-import image5 from "@/assets/image5.png";
-import image6 from "@/assets/image6.png";
+import image1 from "@/assets/v1.jpeg";
+import image2 from "@/assets/v2.webp";
+import image3 from "@/assets/v3.webp";
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 import Class from "./Class";
 
 const classes: Array<ClassType> = [
   {
-    name: "Weight Training Classes",
-    description:
-      "Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est tellus quam porttitor. Mauris velit euismod elementum arcu neque facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit enim mattis odio in risus nunc.",
+    name: "Delicious Food",
+    description: "Assorted food and drinks for your delight.",
     image: image1,
   },
   {
-    name: "Yoga Classes",
+    name: "Easy Payment",
+    description: "Option to pay with card or cash while making your order.",
     image: image2,
   },
   {
-    name: "Ab Core Classes",
+    name: "Instant Access for payment issues",
+    description:
+      "Over the counter service representative to help with any issues you might experience.",
     image: image3,
   },
   {
-    name: "Adventure Classes",
-    description:
-      "Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est tellus quam porttitor. Mauris velit euismod elementum arcu neque facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit enim mattis odio in risus nunc.",
-    image: image4,
+    name: "Serene Environment",
+    image: image1,
   },
   {
-    name: "Fitness Classes",
-    description:
-      "Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est tellus quam porttitor. Mauris velit euismod elementum arcu neque facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit enim mattis odio in risus nunc.",
-    image: image5,
+    name: "Eliminate Queues when ordering",
+    image: image2,
   },
   {
-    name: "Training Classes",
-    description:
-      "Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est tellus quam porttitor. Mauris velit euismod elementum arcu neque facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit enim mattis odio in risus nunc.",
-    image: image6,
+    name: "Customer Support",
+    image: image3,
   },
 ];
 
@@ -69,10 +62,10 @@ const OurClasses = ({ setSelectedPage }: Props) => {
           <div className="md:w-3/5">
             <HText>Our Vision</HText>
             <p className="py-5">
-              Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-              tellus quam porttitor. Mauris velit euismod elementum arcu neque
-              facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-              enim mattis odio in risus nunc.
+              Our vision is to eliminate the need for queues when ordering food!
+              We want to provide a serene environment for our customers to enjoy
+              their meals. We also want to provide excellent customer support
+              for any issues that may arise.
             </p>
           </div>
         </motion.div>

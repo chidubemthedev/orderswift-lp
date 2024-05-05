@@ -8,7 +8,7 @@ import {
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 import Benefit from "./benefit";
-import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
+import BenefitsPageGraphic from "@/assets/benefitpage.jpg";
 import ActionButton from "@/shared/ActionButton";
 
 const benefits: Array<BenefitType> = [
@@ -131,19 +131,17 @@ const Benefits = ({ setSelectedPage }: Props) => {
               }}
             >
               <p className="my-5">
-                Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
-                egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
-                fames vitae vitae quis. Quis amet vulputate tincidunt at in
-                nulla nec. Consequat sed facilisis dui sit egestas ultrices
-                tellus. Ullamcorper arcu id pretium sapien proin integer nisl.
-                Felis orci diam odio.
+                We have served hundreds of customers in the past few months and
+                they all have nothing but good things to say about us. We are
+                the best at what we do and we are not stopping anytime soon. We
+                are committed to providing the best service to our customers.
               </p>
-              <p className="mb-5">
+              {/* <p className="mb-5">
                 Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
                 tellus quam porttitor. Mauris velit euismod elementum arcu neque
                 facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
                 enim mattis odio in risus nunc.
-              </p>
+              </p> */}
             </motion.div>
             {/* Button */}
             <div className="relative mt-16">
