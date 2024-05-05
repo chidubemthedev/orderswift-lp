@@ -7,28 +7,28 @@ import {
 } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
-import Benefit from "./Benefit";
+import Benefit from "./benefit";
 import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
 import ActionButton from "@/shared/ActionButton";
 
 const benefits: Array<BenefitType> = [
   {
     icon: <HomeModernIcon className="h-6 w-6 " />,
-    title: "State of the art facilities.",
+    title: "Menu on your Device.",
     description:
-      "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
+      "Scan the QR code on your table to view the menu and order food.",
   },
   {
     icon: <UserGroupIcon className="h-6 w-6 " />,
-    title: "100's of Diverse Classes.",
+    title: "Instant Payment.",
     description:
-      "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
+      "No need to wait for the waiter to bring the bill. Pay instantly with your phone.",
   },
   {
     icon: <AcademicCapIcon className="h-6 w-6 " />,
-    title: "Expert and Pro Trainers.",
+    title: "Excellent Customer Service.",
     description:
-      "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
+      "Every case of a complaint is handled promptly and gracefully.",
   },
 ];
 
@@ -45,7 +45,7 @@ type Props = {
 
 const Benefits = ({ setSelectedPage }: Props) => {
   return (
-    <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
+    <section id="features" className="mx-auto min-h-full w-5/6 py-20">
       <motion.div
         onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}
       >
@@ -61,11 +61,11 @@ const Benefits = ({ setSelectedPage }: Props) => {
           }}
           className="md:my-5 md:w-3/5"
         >
-          <HText>MORE THAN JUST A GYM.</HText>
+          <HText>MORE THAN JUST A FOOD APP.</HText>
           <p className="my-5 text-sm">
-            We provide world class fitness equipment, trainers and classes to
-            get you to your ultimate fitness goals with ease. We provide true
-            care into each and every member.
+            We provide world class service for everyone who works into any
+            restaurant we do business with. Our ease and comfort of use is our
+            selling point.
           </p>
         </motion.div>
 
@@ -113,8 +113,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
               <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] before:content-abstractwaves">
                 <div className="">
                   <HText>
-                    MILLIONS OF HAPPY MEMBERS GETTING{" "}
-                    <span className="text-primary-500">FIT</span>
+                    HUNDREDS OF HAPPY CUSTOMERS{" "}
+                    <span className="text-primary-500">SERVED</span>
                   </HText>
                 </div>
               </div>
@@ -149,7 +149,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             <div className="relative mt-16">
               <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
                 <ActionButton setSelectedPage={setSelectedPage}>
-                  Join Now
+                  Join The Waitlist
                 </ActionButton>
               </div>
             </div>

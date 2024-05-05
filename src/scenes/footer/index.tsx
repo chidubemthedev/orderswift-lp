@@ -33,7 +33,7 @@ const Footer = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             setSelectedPage={setSelectedPage}
           />
           <Link
-            page="Benefits"
+            page="features"
             selectedPage={selectedPage}
             setSelectedPage={setSelectedPage}
           />
@@ -50,8 +50,8 @@ const Footer = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">Contact Us</h4>
-          <p className="my-5">Tempest gogradi</p>
-          <p className="my-5">Lorem halal matisis doghul porata</p>
+          <p className="my-5">Lagos, Nigeria</p>
+          {/* <p className="my-5">Lorem halal matisis doghul porata</p> */}
           <p>+2349075131896</p>
         </div>
       </div>

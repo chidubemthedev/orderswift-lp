@@ -2,8 +2,7 @@ import React from "react";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
-import HomePageText from "@/assets/HomePageText.png";
-import HomePageGraphic from "@/assets/HomePageGraphic.png";
+import HomePageGraphic from "@/assets/homepagegraphic.jpeg";
 import SponsorRedBull from "@/assets/SponsorRedBull.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
 import SponsorForbes from "@/assets/SponsorForbes.png";
@@ -21,8 +20,9 @@ const Home = ({ setSelectedPage }: Props) => {
     <section id="home" className="gap-16 bg-gray-20 py-10 md:h-full md:pb-0">
       {/* Image and main header */}
       <motion.div
-      onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
-       className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6">
+        onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
+        className="mx-auto w-5/6 items-center justify-center md:flex md:h-5/6"
+      >
         {/* Main header */}
         <div className="z-10 mt-32 basis-3/5 ">
           {/* Headings */}
@@ -38,15 +38,16 @@ const Home = ({ setSelectedPage }: Props) => {
             className="md:-mt-20"
           >
             <div className="relative">
-              <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext ">
-                <img src={HomePageText} alt="home-page-text" />
+              <div className="before:absolute before:-top-20 before:-left-20 before:z-[-1]  ">
+                <h1 className="text-[60px] font-[700] uppercase tracking-wider">
+                  OrderSwift
+                </h1>
               </div>
             </div>
 
             <p className="mt-8 text-sm">
-              Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-              Studios to get the Body Shapes That you Dream of.. Get Your Dream
-              Body Now.
+              Order Swift is a platform that allows you to order food from your
+              table in a restaurant, without the need for a waiter.
             </p>
           </motion.div>
 
@@ -64,7 +65,7 @@ const Home = ({ setSelectedPage }: Props) => {
           >
             <ActionButton setSelectedPage={setSelectedPage}>
               {" "}
-              Join Now{" "}
+              Join The Waitlist
             </ActionButton>
             <AnchorLink
               className="text-sm font-bold text-primary-500 underline hover:text-secondary-500"
@@ -83,7 +84,7 @@ const Home = ({ setSelectedPage }: Props) => {
       </motion.div>
 
       {/* Sponsors */}
-      {isAboveMediumScreens && (
+      {/* {isAboveMediumScreens && (
         <div className="h-[150px] w-full bg-primary-100 py-10">
           <div className="mx-auto w-5/6">
             <div className="flex w-3/5 items-center justify-between gap-8">
@@ -93,7 +94,7 @@ const Home = ({ setSelectedPage }: Props) => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </section>
   );
 };
