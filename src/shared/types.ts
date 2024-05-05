@@ -1,7 +1,7 @@
 export enum SelectedPage {
   Home = "home",
   Benefits = "benefits",
-  OurClasses = "ourclasses",
+  OurClasses = "ourvision",
   ContactUs = "contactus",
 }
 
@@ -12,7 +12,7 @@ export interface BenefitType {
 }
 
 export interface ClassType {
-  name: string,
-  description?: string,
-  image: string
+  name: string;
+  description?: string;
+  image: string;
 }
