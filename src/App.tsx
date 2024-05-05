@@ -28,18 +28,22 @@ function App() {
     window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
     <div className="app bg-gray-20">
-      <Navbar isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+      <Navbar
+        isTopOfPage={isTopOfPage}
+        selectedPage={selectedPage}
+        setSelectedPage={setSelectedPage}
+      />
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
       <OurClasses setSelectedPage={setSelectedPage} />
       <ContactUs setSelectedPage={setSelectedPage} />
-      <Footer />
+      <Footer selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
     </div>
   );
 }
