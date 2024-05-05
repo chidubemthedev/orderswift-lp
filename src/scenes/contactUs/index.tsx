@@ -44,13 +44,12 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           className="md:w-3/5"
         >
           <HText>
-            <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE.
+            <span className="text-primary-500">JOIN THE WAITLIST</span>
           </HText>
           <p className="my-5">
-            Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-            tellus quam porttitor. Mauris velit euismod elementum arcu neque
-            facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit enim
-            mattis odio in risus nunc.
+            Let us have your email so you get immediately notified when we are
+            ready to launch. We will also send you a discount code for your
+            first purchase. We promise not to spam you.
           </p>
         </motion.div>
 
@@ -104,7 +103,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 </p>
               )}
 
-              <textarea
+              {/* <textarea
                 className={inputStyles}
                 rows={4}
                 cols={50}
@@ -118,7 +117,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                   {errors.message.type === "maxLength" &&
                     "Max lenght is 2000 characters."}
                 </p>
-              )}
+              )} */}
 
               <button
                 className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
@@ -141,7 +140,11 @@ const ContactUs = ({ setSelectedPage }: Props) => {
             className="relative mt-16 basis-2/5 md:mt-0"
           >
             <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
-              <img className="w-full" src={ContactUsPageGraphic} alt="contact-us-image" />
+              <img
+                className="w-full"
+                src={ContactUsPageGraphic}
+                alt="contact-us-image"
+              />
             </div>
           </motion.div>
         </div>

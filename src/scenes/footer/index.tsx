@@ -1,34 +1,58 @@
 import React from "react";
 import Logo from "@/assets/Logo.png";
+import Link from "../navbar/Link";
+import { SelectedPage } from "@/shared/types";
 
-type Props = {};
+type Props = {
+  selectedPage: SelectedPage;
+  setSelectedPage: (value: SelectedPage) => void;
+  isTopOfPage: boolean;
+};
 
-const Footer = (props: Props) => {
+const Footer = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   return (
     <footer className="bg-primary-100 py-16">
       <div className="justify-content mx-auto w-5/6 gap-16 md:flex">
         <div className="mt-16 basis-1/2 md:mt-0">
-          <img src={Logo} alt="logo" />
+          {/* <img src={Logo} alt="logo" /> */}
+          <h1 className="font-[700] uppercase">OrderSwift</h1>
+
           <p className="my-5">
-            Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-            tellus quam porttitor. Mauris velit euismod elementum arcu neque
-            facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit enim
-            mattis odio in risus nunc.
+            Order Swift is a platform that allows you to order food from your
+            table in a restaurant, without the need for a waiter.
           </p>
-          <p>copyright Evogym All Rights Reserved.</p>
+          <p>
+            Copyright {new Date().getFullYear()} Orderswift. All Rights
+            Reserved.
+          </p>
         </div>
-        <div className="mt-16 basis-1/4 md:mt-0">
-          <h4 className="font-bold">Link</h4>
-          <p className="my-5">Lorem</p>
-          <p className="my-5">Lorem opaaum</p>
-          <p className="my-5">Lorem halal</p>
-          <p className="my-5">Gravida lorem</p>
+        <div className="mt-16 flex basis-1/4 flex-col space-y-[15px] md:mt-0">
+          <Link
+            page="Home"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+          />
+          <Link
+            page="Benefits"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+          />
+          <Link
+            page="Our Vision"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+          />
+          <Link
+            page="Contact Us"
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+          />
         </div>
         <div className="mt-16 basis-1/4 md:mt-0">
           <h4 className="font-bold">Contact Us</h4>
           <p className="my-5">Tempest gogradi</p>
           <p className="my-5">Lorem halal matisis doghul porata</p>
-          <p>+234-419419419</p>
+          <p>+2349075131896</p>
         </div>
       </div>
     </footer>
